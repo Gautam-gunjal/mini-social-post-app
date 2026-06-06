@@ -22,13 +22,7 @@ const allowedOrigins = (process.env.CLIENT_URL || '')
 
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-      return callback(new Error('Not allowed by CORS'));
-    },
-    credentials: true,
+    origin: '*',
   })
 );
 
