@@ -90,6 +90,23 @@ Only **two MongoDB collections** are used:
 
 ---
 
+## Supported Image Formats
+
+When creating a post with an image, the following file types are accepted:
+
+| Format | Extension |
+|---|---|
+| JPEG | `.jpg`, `.jpeg` |
+| PNG | `.png` |
+| WebP | `.webp` |
+| GIF | `.gif` |
+
+> **Maximum file size: 5MB**
+>
+> Other formats like AVIF, HEIC, or BMP are not supported. Please convert your image to JPG or PNG before uploading.
+
+---
+
 ## Getting Started Locally
 
 ### Prerequisites
